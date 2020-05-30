@@ -11,10 +11,12 @@
       type: 'GET',
       url: serverUrl,
       // expect data returned to be a string
-      data: data,
-      success: () => {
+      success: (data) => {
+        console.log( data, 'this is data type');
         SwimTeam.move(data);
         console.log('Server sent back data to client');
+      },
+      error:() => console.log('Failed to retrieve data from server')
     });
     setTimeout(ajaxGet, 500);
   };
