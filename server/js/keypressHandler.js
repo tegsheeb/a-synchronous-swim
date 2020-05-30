@@ -5,7 +5,7 @@ const keypress = require('keypress');
 // Utility Function ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-module.exports.validMessages = ['left', 'right', 'up', 'down'];
+const validMessages = ['left', 'right', 'up', 'down'];
 const mappedChars = { space: ' ' }; // special mappings
 
 const isValidMessage = (message) => {

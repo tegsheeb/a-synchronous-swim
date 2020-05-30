@@ -18,7 +18,7 @@
       },
       error:() => console.log('Failed to retrieve data from server')
     });
-    setTimeout(ajaxGet, 500);
+    setTimeout(ajaxGet, 200);
   };
 
   ajaxGet();
